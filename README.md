@@ -5,7 +5,8 @@
 This project implements a Hospital Database Management System using Python and SQLite to analyze patient readmission rates and identify the department responsible for patient care.
 It is designed for academic DBMS projects, healthcare analytics, and exam demonstrations.
 
-🎯 Objectives
+**🎯 Objectives**
+
 Store hospital data in a structured relational database
 
 Track patient readmissions
@@ -16,9 +17,12 @@ Determine the department and doctor responsible for care
 
 Use synthetic (random) data to maintain privacy
 
-🧩 Database Schema
-📋 Tables Included
-1️⃣ Patient
+**🧩 Database Schema**
+
+**📋 Tables Included**
+
+**1️⃣ Patient**
+
 Column	Description
 PatientID	Primary Key
 PatientName	Patient full name
@@ -28,23 +32,29 @@ Disease	Diagnosed disease
 BloodGroup	Blood group
 Phone	Contact number
 City	City of residence
-2️⃣ Department
+
+**2️⃣ Department**
+
 Column	Description
 DepartmentID	Primary Key
 DepartmentName	Department name
-3️⃣ Doctor
+**3️⃣ Doctor**
+
 Column	Description
 DoctorID	Primary Key
 DoctorName	Doctor name
 DepartmentID	Foreign Key (Department)
-4️⃣ Readmission
+
+**4️⃣ Readmission**
+
 Column	Description
 ReadmissionID	Primary Key
 PatientID	Foreign Key (Patient)
 DepartmentID	Foreign Key (Department)
 DoctorID	Foreign Key (Doctor)
 ReadmissionDate	Date of readmission
-🔁 Relationships
+
+**🔁 Relationships**
 
 One Patient → Many Readmissions
 
@@ -54,7 +64,7 @@ One Doctor → Many Readmissions
 
 Readmission links Patient, Doctor, and Department
 
-⚙️ Technologies Used
+**⚙️ Technologies Used**
 
 Python 3
 
@@ -64,7 +74,7 @@ sqlite3 (database handling)
 
 random, datetime (synthetic data generation)
 
-🚀 Features Implemented
+**🚀 Features Implemented**
 
 Creation of hospital database tables
 
