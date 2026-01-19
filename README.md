@@ -6,7 +6,6 @@ This project implements a Hospital Database Management System using Python and S
 It is designed for academic DBMS projects, healthcare analytics, and exam demonstrations.
 
 🎯 Objectives
-
 Store hospital data in a structured relational database
 
 Track patient readmissions
